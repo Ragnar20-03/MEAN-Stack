@@ -1,0 +1,4 @@
+<h1>Demonstration Of Parent to Child Data sharing</h1>
+
+<app-demo [message]="MessageFromParent" (Myevent)="msg=$event"></app-demo>
+<h1>{{msg}}</h1>
