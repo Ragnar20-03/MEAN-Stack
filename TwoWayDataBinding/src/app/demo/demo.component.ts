@@ -7,8 +7,7 @@ import { Component } from '@angular/core';
 })
 export class DemoComponent {
 public BatchName:string="";
-public Currentpass:string="";
-public Value:string="";
+
 
 
 

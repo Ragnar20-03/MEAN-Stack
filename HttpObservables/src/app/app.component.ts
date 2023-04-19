@@ -6,8 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'PTOC';
-  public MessageFromParent="Hii Child..";
-  public msg="";
+  title = 'HttpObservables';
 }
- 

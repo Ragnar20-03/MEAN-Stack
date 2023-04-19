@@ -1,23 +1,25 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { BatchdetailsComponent } from './batchdetails/batchdetails.component';
-import { BatchlistComponent } from './batchlist/batchlist.component';
+import { BatchesListComponent } from './batches-list/batches-list.component';
+import { BatchDetailsComponent } from './batch-details/batch-details.component';
+import { BatchService } from './batch.service'; // Import the required service
 
-import {HttpClientModule} from '@angular/common/http';
-import { MarvellousService } from './marvellous.service';
+// Import httpclientmodule
+import {HttpClientModule} from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
-    BatchdetailsComponent,
-    BatchlistComponent
+    BatchesListComponent,
+    BatchDetailsComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule    // Add the name into import
   ],
-  providers: [MarvellousService],
+
+  providers: [BatchService],  // Register name of our service
   bootstrap: [AppComponent]
 })
 export class AppModule { }

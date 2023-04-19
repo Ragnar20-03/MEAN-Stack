@@ -7,10 +7,12 @@ import { IBatches } from './Batches';
   providedIn: 'root'
 })
 export class MarvellousService {
+  
+  constructor(public hobj: HttpClient) { 
+    
+  }
   // In future this path contains the url of Database / server (Node.ja)
-  public URL: String ="\assets\Data\Batches.json";
-
-  constructor(public hobj: HttpClient) { }
+  public URL:String ="/assets/Data/Batches.json";
 
   public GetBatchDetails(): Observable<IBatches[]> 
   {
@@ -18,3 +20,4 @@ export class MarvellousService {
   }
 
 }
+ 
