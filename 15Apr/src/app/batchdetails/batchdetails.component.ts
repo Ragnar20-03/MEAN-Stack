@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MarvellousService } from '../marvellous.service';
+import { ɵɵsyntheticHostProperty } from '@angular/core';
 
 @Component({
   selector: 'app-batchdetails',
@@ -8,14 +9,13 @@ import { MarvellousService } from '../marvellous.service';
 })
 export class BatchdetailsComponent implements OnInit {
 
-  public Batches: any = []
+  public details:any=[]
 
-  constructor(public obj: MarvellousService) {
+  constructor(public sobj: MarvellousService) {
 
-  }
-
+  }       
   ngOnInit() {
-    return this.obj.GetBatchDetails().subscribe(data => this.Batches = data)
+      this.sobj.GetDetails().subscribe(data => this.details=data)
   }
 
 }

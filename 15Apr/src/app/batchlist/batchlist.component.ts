@@ -8,17 +8,15 @@ import { MarvellousService } from '../marvellous.service';
 })
 export class BatchlistComponent implements OnInit{
 
-  
-  public Batches: any = [];
+  public details:any=[];
 
-  constructor(public obj: MarvellousService) {
+  constructor(private sobj:MarvellousService){
 
   }
 
   ngOnInit() {
-    return this.obj.GetBatchDetails().subscribe(data => this.Batches = data)
-  }
-
+    this.sobj.GetDetails().subscribe(data => this.details=data)
+  } 
 }
 
 
