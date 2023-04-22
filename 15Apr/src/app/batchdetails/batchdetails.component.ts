@@ -7,15 +7,8 @@ import { ɵɵsyntheticHostProperty } from '@angular/core';
   templateUrl: './batchdetails.component.html',
   styleUrls: ['./batchdetails.component.css']
 })
-export class BatchdetailsComponent implements OnInit {
+export class BatchdetailsComponent  {
 
-  public details:any=[]
 
-  constructor(public sobj: MarvellousService) {
-
-  }       
-  ngOnInit() {
-      this.sobj.GetDetails().subscribe(data => this.details=data)
-  }
 
 }

@@ -1,5 +1,6 @@
 import { Component ,OnInit } from '@angular/core';
 import { MarvellousService } from '../marvellous.service';
+import { IBatches } from '../Batches';
 
 @Component({
   selector: 'app-batchlist',
@@ -7,16 +8,21 @@ import { MarvellousService } from '../marvellous.service';
   styleUrls: ['./batchlist.component.css']
 })
 export class BatchlistComponent implements OnInit{
+  public list:any=[];
 
-  public details:any=[];
-
-  constructor(private sobj:MarvellousService){
+  constructor (public mobj:MarvellousService)
+  {
 
   }
-
-  ngOnInit() {
-    this.sobj.GetDetails().subscribe(data => this.details=data)
-  } 
+  ngOnInit () 
+  {
+    this.mobj.GetBatchDetails().subscribe(data => this.list=data)
+  }
+  public clickk (){
+  console.log(this.list.length);
+  
+}
+  
 }
 
 

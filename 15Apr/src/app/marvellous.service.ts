@@ -8,19 +8,15 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class MarvellousService {
- 
-  public URL:string="/assets/Data/Batches.json"
-constructor( public hobj:HttpClient){
-
-}
-public GetDetails = ():Observable<IBatches[]> => {
   
-  return this.hobj.get<IBatches[]>(this.URL)
-  
-}
-public hii()
-{
+  public url:string="/assets/Data/Batches.json"
 
-}
+  constructor(public hobj:HttpClient)
+  {
 
+  }
+
+  public GetBatchDetails = ():Observable<IBatches[]> =>{
+    return this.hobj.get<IBatches[]>(this.url);
+  }
 }
