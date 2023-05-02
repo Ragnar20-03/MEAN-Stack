@@ -5,10 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
-import { NgIf } from '@angular/common';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 @NgModule({
   declarations: [
     AppComponent
@@ -16,12 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
-    NgIf,
-    NgbCarouselModule,
-    BrowserAnimationsModule,
-
-
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

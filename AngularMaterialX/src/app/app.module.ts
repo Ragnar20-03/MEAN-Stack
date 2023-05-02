@@ -3,11 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
-import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
-import { NgIf } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatButtonModule} from '@angular/material/button';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatBadgeModule} from '@angular/material/badge'
 
 @NgModule({
   declarations: [
@@ -16,12 +17,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
-    NgIf,
-    NgbCarouselModule,
     BrowserAnimationsModule,
-
-
+    MatSlideToggleModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatBadgeModule
+ 
   ],
   providers: [],
   bootstrap: [AppComponent]
