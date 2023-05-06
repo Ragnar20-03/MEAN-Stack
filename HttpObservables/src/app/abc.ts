@@ -1,3 +1,3 @@
-export interface detais {
+export interface details {
     1: string, 2: number
 }

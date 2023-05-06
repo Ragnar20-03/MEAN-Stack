@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { detais } from './abc';
+import { details } from './abc';
 import {Observable } from 'rxjs'
 
 @Injectable({
@@ -13,8 +13,8 @@ export class MarvellousService {
 
   }
 
-  public GetDetails = ():Observable<detais[]> => {
-    return this.hobj.get<detais[] >(this.URL);
+  public GetDetails = ():Observable<details[]> => {
+    return this.hobj.get<details[] >(this.URL);
   }
 
 }
