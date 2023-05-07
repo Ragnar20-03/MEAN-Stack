@@ -26,6 +26,7 @@ eobj.get('/getbatches' , function(req,res){
 })
 
 
+eobj.get('/getBatches/:id' , ReadDataID)
 function ReadDataID(req,res)
 {
     var iCnt=0;
@@ -46,4 +47,37 @@ function ReadDataID(req,res)
     }
 }
 
-eobj.get('/getBatches/:id' , ReadDataID)
+
+// Delete the Data From database(Delete)
+eobj.delete('/getbatches/:id',(req,res) => {
+ var iCnt=0;
+ for(iCnt=0; iCnt<batches.length; iCnt++)
+ {
+    if(batches[iCnt].id == req.params.id)
+    {
+        break;
+    }
+ }
+ if(iCnt == batches.length)
+ {
+    res.status(404).send("There is No such batch to delete");
+ }
+ else{
+    batches.splice(iCnt,1);
+    res.send(batches);
+ }
+})
+
+// Create Data into The database(Post)
+
+eobj.post('/batches',function(req,res){
+    const newData={
+        id : batches.length+1,
+        name:req.body.name,
+        duration : req.body.duration
+    }
+
+    batches.push(newData);
+    res.send(batches);
+    
+})
