@@ -26,4 +26,24 @@ eobj.get('/getbatches' , function(req,res){
 })
 
 
+function ReadDataID(req,res)
+{
+    var iCnt=0;
+    for(iCnt=0; iCnt<batches.length; iCnt++)
+    {
+                                 // url parameters
+        if(batches[iCnt].id == req.params.id)
+        {
+            break;
+        }
+    }
+    if(iCnt == batches.length)
+    {
+        res.status(402).send("There is No Such Batch");
+    }
+    else{
+        res.send(batches[iCnt])
+    }
+}
+
 eobj.get('/getBatches/:id' , ReadDataID)
