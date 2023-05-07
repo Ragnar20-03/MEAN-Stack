@@ -106,7 +106,7 @@ eobj.put('/getbatches/:id' , (req,res) => {
     for (iCnt= 0; iCnt<batches.length; iCnt++)
     {
         if(batches[iCnt].id == req.params.id)
-        {
+        {    
             break;
         }
     }
