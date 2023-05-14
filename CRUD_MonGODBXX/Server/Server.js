@@ -94,10 +94,11 @@ if (result.acknowledged) {
 
 // Entry point function of node.JS + Express Server
 function main() {
-    // deleteData();
-    // readData();
-    // insertData();
-    // updateData();
+    // deleteData();    D
+    // readData();      R
+    // insertData();    C
+    // updateData();    U
+                     // CRUD 
 
 }
 
