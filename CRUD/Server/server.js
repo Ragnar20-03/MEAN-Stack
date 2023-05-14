@@ -117,7 +117,7 @@ eobj.put('/getbatches/:id' , (req,res) => {
 
     else{
         batches[iCnt].name=req.body.name;
-        batches[iCnt].name=req.body.duration;
+        batches[iCnt].duration=req.body.duration;
 
         res.send(batches[iCnt]);
     }
