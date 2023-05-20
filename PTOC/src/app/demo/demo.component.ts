@@ -10,7 +10,7 @@ export class DemoComponent {
 
  @Output() public Myevent = new EventEmitter();
 public onSend()
- {
+ { 
   this.Myevent.emit("THe Hii From child Component")
  }
 }

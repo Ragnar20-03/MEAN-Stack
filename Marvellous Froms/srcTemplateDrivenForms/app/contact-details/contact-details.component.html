@@ -1,0 +1,16 @@
+<!-- We can add validatons in form using templates-->
+<form>
+  <div class="form-group">
+  <label for="StudName">Studennt name of Marvellous Infosystems</label>
+  <input required ngModel name="StudName" #name="ngModel" id="StudName" (change)="LogChange(name)" type="text" class="form-control">
+    <div class="alert alert-danger" *ngIf="!name.valid">Name is Compulssory.</div>
+</div>
+
+<div class="form-group">
+    <label>Your Feedback</label>
+    <textarea id = "comment" cols="20" rows="15" class="form-control"></textarea>
+</div>
+<div>
+  <button class="btn btn-primary">Submit</button>
+</div>
+</form>

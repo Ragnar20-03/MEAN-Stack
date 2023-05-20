@@ -10,4 +10,4 @@ export class AppComponent {
   public MessageFromParent="Hii Child..";
   public msg="";
 }
- 
+  

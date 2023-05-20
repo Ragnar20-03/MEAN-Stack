@@ -18,7 +18,7 @@ async function getConnection()
     
     let collection = db.collection("Batches"); // Connect with Batches collection (table) in Marvellous database
     
-    let res = await collection.find({}).toArray(); // takes data in response variable via Find Method;
+    let res = await collection.find({}).toArray(); // takes data in response variable via Find Query;
 
     console.log(res);
     
