@@ -1,0 +1,36 @@
+[{
+  "_id": "1",
+  "name": "Angular: Web Development",
+  "description": "2 Days",
+  "Teacher": "Roshan Patil"
+},
+{
+  "_id": "2",
+  "name": "Python: Machine Learning",
+  "description": "2 Days",
+  "Teacher": "Roshan Patil"
+},
+{
+  "_id": "3",
+  "name": "Machine Learning",
+  "description": "2 Days",
+  "Teacher": "Piyush Manohar Khairnar"
+},
+{
+  "_id": "4",
+  "name": "GoLang",
+  "description": "2 Days",
+  "Teacher": "Piyush Manohar Khairnar"
+},
+{
+  "_id": "5",
+  "name": "IPhone Programming",
+  "description": "2 Days",
+  "Teacher": "Piyush Manohar Khairnar"
+},
+{
+  "_id": "6",
+  "name": "Android Programming",
+  "description": "2 Days",
+  "Teacher": "Piyush Manohar Khairnar"
+}]

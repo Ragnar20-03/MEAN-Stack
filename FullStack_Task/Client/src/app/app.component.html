@@ -1,0 +1,20 @@
+<h1>
+  Inside App
+</h1>
+
+<table class="w-300 table table.striped">
+  <thead>
+    <tr>
+      <th>Batch Name</th>
+        
+      <th>Fees</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let v of Arr">
+        <td>{{v.Batch}}</td>
+        <td>{{v.Fees}}</td>
+        <td>{{v.Duration}}</td>
+    </tr>
+</tbody>
+</table>

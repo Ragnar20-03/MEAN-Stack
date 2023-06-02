@@ -1,0 +1,22 @@
+
+<h1>Marvellous Infosystem</h1>
+<br>
+<h1>Marvellous Infosystem Batches Details</h1>
+<br>
+<table class="w-300 table table.striped">
+    <thead>
+        <tr>
+            <th>Batch Name</th>
+            <th>Batch Fees</th>
+            <th>Batch Duration</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let value of Batches">
+            <td>{{value.Batch}}</td>
+            <td>{{value.Fees}}</td>
+            <td>{{value.Duration}}</td>
+        </tr>
+    </tbody>
+    
+</table>

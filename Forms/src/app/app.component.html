@@ -1,0 +1,46 @@
+<h1>
+  Registration Form :
+</h1>
+
+<div class=" Form-Group">
+  <form [formGroup]="registrationForm">
+
+    <div class="form - Control">
+      <label for="">Usrername</label>
+      <input type="text" formControlName="username" [(ngModel)]="rData.username">
+    </div>
+<br>
+
+    <div class="form - Control">
+      <label for="">Password</label>
+      <input type="text" formControlName="password" [(ngModel)]="rData.password">
+    </div>
+<br>
+    <div class="form - Control">
+      <label for="">Confirm Password</label>
+      <input type="text" formControlName="cpassword">
+    </div>
+<br>
+
+    <div formGroupName="address">
+
+      <div class="form - Control">
+        <label for="">City</label>
+        <input type="text" formControlName="city" [(ngModel)]="rData.city">
+      </div>
+      <br>
+
+
+      <div class="form - Control">
+        <label for="">Pin Code</label>
+        <input type="text" formControlName="postalcode">
+      </div>
+
+    </div>
+
+  </form>
+</div>
+<br>
+
+<button (click)="postData()"> Set</button>
+{{registrationForm.value | json}}

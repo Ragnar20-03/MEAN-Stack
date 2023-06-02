@@ -1,0 +1,36 @@
+[{
+  "_id": "1",
+  "name": "IOT",
+  "description": "3 Days",
+  "Teacher": "Piyush Manohar Khairnar"
+},
+{
+  "_id": "2",
+  "name": "IOS Internals",
+  "description": "3 Days",
+  "Teacher": "Piyush Manohar Khairnar"
+},
+{
+  "_id": "3",
+  "name": "LSP",
+  "description": "3 Days",
+  "Teacher": "Piyush Manohar Khairnar"
+},
+{
+  "_id": "4",
+  "name": "Struts",
+  "description": "3 Days",
+  "Teacher": "Piyush Manohar Khairnar"
+},
+{
+  "_id": "5",
+  "name": "Embedded Programming",
+  "description": "3 Days",
+  "Teacher": "Piyush Manohar Khairnar"
+},
+{
+  "_id": "6",
+  "name": "IOT Workshop",
+  "description": "3 Days",
+  "Teacher": "Piyush Manohar Khairnar"
+}]

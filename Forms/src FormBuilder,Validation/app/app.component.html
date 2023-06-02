@@ -1,0 +1,46 @@
+<h1>
+  Registration Form :
+</h1>
+
+<div class=" Form-Group">
+  <form [formGroup]="registrationForm">
+
+    <div class="form - Control">
+      <label for="">UserName</label>
+      <input type="text" formControlName="username" [class.is-invalid]="registrationForm.get('username').invalid && registrationForm.get('username').touched" >
+    </div>
+<br>
+
+    <div class="form - Control">
+      <label for="">Password</label>
+      <input type="text" formControlName="password">
+    </div>
+<br>
+    <div class="form - Control">
+      <label for="">Confirm Password</label>
+      <input type="text" formControlName="cpassword">
+    </div>
+<br>
+
+    <div formGroupName="address">
+
+      <div class="form - Control">
+        <label for="">City</label>
+        <input type="text" formControlName="city">
+      </div>
+      <br>
+
+
+      <div class="form - Control">
+        <label for="">Pin Code</label>
+        <input type="text" formControlName="postalcode">
+      </div>
+
+    </div>
+
+  </form>
+</div>
+<br>
+
+<button (click)="setValues()"> Set</button>
+{{registrationForm.value | json}}
