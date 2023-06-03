@@ -1,1 +1,24 @@
-<p>register works!</p>
+<div class="row">
+    <div class="col-md-6 mx-auto">
+        <div class="card rounded-0 mt-3">
+            <div class="card-header mt-3">
+                <h3>
+                    <h3 class="mb-0">Register </h3>
+                </h3>
+            </div>
+            <div class="card-body">
+                <form class="form">
+                    <div class="form-group">
+                        <label  for=""><h3>Email</h3></label>
+                        <input [(ngModel)]="registerUserData.email" name="email" type="text" class="form-control rounded-0" required>
+                    </div>
+                    <div class="form-gropup">
+                        <label  for=""><h3>Password</h3></label>
+                        <input [(ngModel)]="registerUserData.password" name="password" type="password" class="form-control rounded-0" required>
+                    </div>
+                    <button (click)="registerUser()" type="button" class="btn btn-primary mt-2 float-right"><h3>Register</h3></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
